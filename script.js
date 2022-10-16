@@ -11,33 +11,37 @@ function updateText () {
     displayValue.innerText = numberInput;
 }
 
-function operate(operator, num1, num2) {
+function operate(operator) {
     if (operator == "+") {
-        return add(num1, num2);
+        return add();
     } else if (operator == "-") {
-        return subtract(num1, num2);
+        return subtract();
     } else if (operator == "x") {
-        return multiply (num1, num2)
+        return multiply ()
     } else if (operator == "%") {
-        return divide(num1, num2)
+        return divide()
     } else {
         console.log("problem with operator")
     }
 }
-function add (num1, num2) {
-    let result = (num1 + num2)
+function add () {
+    let result = "temp"
+    console.log("add")
     return result
 }
-function subtract (num1, num2) {
-    let result =  (num1 - num2)
+function subtract () {
+    let result =  "temp"
+    console.log("sub")
     return result
 }
-function multiply (num1,num2) {
-    let result =  (num1 * num2)
+function multiply () {
+    let result =  "temp"
+    console.log("mult")
     return result
 }
-function divide (num1, num2) {
-    let result =  (num1 / num2)
+function divide () {
+    let result =  "temp"
+    console.log("div")
     return result
 }
 
